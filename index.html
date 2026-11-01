@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auriculares Bluetooth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SoundMax</h1>
+        <p>Tu música, sin cables.</p>
+    </header>
+
+    <main>
+        <section class="producto">
+            <div class="producto-imagen">
+                <!-- Imagen de ejemplo de auriculares -->
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Auriculares Bluetooth SoundMax">
+            </div>
+            <div class="producto-info">
+                <h2>Auriculares Bluetooth SoundMax Pro</h2>
+                <p class="precio">$49.99</p>
+                <ul>
+                    <li>✅ Bluetooth 5.0</li>
+                    <li>✅ Batería de 20 horas</li>
+                    <li>✅ Cancelación de ruido</li>
+                    <li>✅ Micrófono integrado</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="pedido">
+            <h2>Realiza tu pedido</h2>
+            <form id="formulario-pedido">
+                <div class="campo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+                <div class="campo">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="10" required>
+                </div>
+                <button type="submit">Comprar ahora</button>
+            </form>
+            <p id="mensaje-confirmacion" class="oculto"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SoundMax. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
